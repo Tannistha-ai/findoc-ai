@@ -14,6 +14,7 @@ langchain-text-splitters
 
 numpy
 pandas
+matplotlib
 
 torch
 transformers
