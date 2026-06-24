@@ -1,9 +1,14 @@
-import pytesseract
+
 from PIL import Image
 import fitz  # PyMuPDF
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+import os
+import pytesseract
 
+if os.name == "nt":
+    pytesseract.pytesseract.tesseract_cmd = (
+        r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    )
 def extract_text(file_path: str) -> str:
     text = ""
 

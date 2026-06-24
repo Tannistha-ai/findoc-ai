@@ -2,5 +2,12 @@
 .idea/
 __pycache__/
 .env
+
 vector_db/
+
+*.pyc
+*.pyo
+
+.DS_Store
+
 test.png
